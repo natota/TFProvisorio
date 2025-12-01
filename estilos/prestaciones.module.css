@@ -1,0 +1,36 @@
+.art {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 5% auto;
+}
+
+.sec {
+  display: flex;
+  width: 30%;
+  border: solid #e82f3e;
+  border-radius: 20px;
+  padding: 3%;
+}
+
+.img {
+  width: 60%;
+  margin: auto 20%;
+
+}
+
+.p {
+  margin: 2% 0;
+}
+
+@media (max-width: 800px) {
+  .sec {
+    min-width: 100%;
+margin:2%;
+  }
+
+  .img {
+    width: 40%;
+    margin: 0 30%;
+  }
+}

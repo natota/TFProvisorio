@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "nombre": "ADOPCIÓN RESPONSABLE: Cuidado y respeto hacia los demás",
+        "descripcion": "Cuando saques a pasear a tu perro no te olvides llevar:",
+        "texto": "",
+        "foto": "/paseandoPerro.jpeg",
+        "info": "📿collar, 🦮 correa, 🐕‍🦺 bozal(en caninos de +25kg), 🗑️ bolsa de excrementos"
+    },
+    {
+        "id": 2,
+        "nombre": "ANIMALES EN LA VÍA PÚBLICA: ",
+        " descripcion": "",
+        "texto": "❌ Su presencia representa un problema de salud pública: transmisión de enfermedades, mordeduras, deterioro del medio ambiente",
+        "foto": "/perroParque.jpeg",
+        "info": "✔️ ¿Qué podemos hacer para solucionarlo? Esterilización quirúrgica, adopción responsable, vacunación antirrábica"
+    },
+    {
+        "id": 3,
+        "nombre": "VACUNACIÓN ANTIRRÁBICA Y DESPARACITACIÓN: Para perros y gatos a partir de 3 meses de edad",
+        "descripcion": "",
+        "texto": "✔️Martes de 8-12 hs en el Parque Independencia",
+        "foto": "/perroEnfermera.jpeg",
+        "info": "✔️Jueves de 9-15 hs en la Plaza Rivadavia"
+    }
+]

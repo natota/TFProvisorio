@@ -1,0 +1,11 @@
+.tarjetaAvisos {
+    width: 77%;
+    align-content: center;
+    margin: auto;
+    padding: 4%;
+    opacity: 0.8;
+   background-color:bisque;
+   border-radius: 8%;
+   font-size: 1.1rem;
+   position: relative;
+}

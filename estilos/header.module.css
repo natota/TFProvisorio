@@ -1,0 +1,17 @@
+.encabezado {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  padding-bottom: 0.5em;
+}
+
+.img {
+  padding: 0 5%;
+}
+
+.head {
+  font-size: 2.5em;
+  color: #E82F3E;
+  text-align: center;
+  margin-left: 0 5%;
+}

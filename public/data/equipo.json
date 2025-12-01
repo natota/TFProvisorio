@@ -1,0 +1,17 @@
+[
+    {
+        "imagen": "/foto2.jpg",
+        "alt": "control veterinario",
+        "titulo": "Equipo de veterinarios"
+    },
+    {
+        "imagen": "/foto1.jpg",
+        "alt": "devolución de animales rescatados",
+        "titulo": "Voluntarios rescatistas"
+    },
+    {
+        "imagen": "/foto3.png",
+        "alt": "muestra de animalitos para adoptar",
+        "titulo": "Voluntarios que evalúan adoptantes y sociabilizan animales"
+    }
+]

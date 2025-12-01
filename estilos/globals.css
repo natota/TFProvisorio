@@ -1,0 +1,176 @@
+@import "tailwindcss";
+li {
+    font-size: 1.1em;
+}
+
+p {
+    font-size: 1.1em;
+}
+
+h2 {
+    color: hsl(197, 98%, 40%);
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+h3 {
+    color:#E82F3E;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+strong {
+    color: #E82F3E;
+}
+
+.home {
+     margin:4%;
+}
+
+.lista {
+    margin: 0 5%;
+    padding: 2em;
+    border-color: #E82F3E;
+    border-radius: 20%;
+}
+
+.portada {
+    display: flex;
+   
+}
+
+.fotoPortada {
+    width: 90%;
+}
+.texto{
+    margin-left: 4%;
+}
+.despedida{
+    margin:2%;
+}
+.galeria {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.galeria img {
+    margin-bottom: 2%;
+}
+.fotos2{
+    background-color: rgba(231, 187, 133, 0.2);
+    padding:4%;
+}
+figure{
+    width: 32%;
+}
+.columna {
+    width: 20%;
+}
+
+.contacto {
+    display: flex;
+    flex-direction: row;
+    margin: 5% 10%;
+}
+
+.section {
+    width: 45%;
+    border: solid #E82F3E;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.titulo {
+    text-align: center;
+    margin-top: 5%;
+}
+
+.div {
+    margin: 10px 10%;
+}
+
+.input {
+    border: solid #1c1109;
+    margin-left: 10px;
+    border-radius: 12px;
+    width: 100%;
+    padding-left: 2%;
+}
+
+button {
+    border-radius: 40%;
+    margin: 5% 35%;
+    min-width: 30%;
+    background-color: #E82F3E;
+    padding: 1% 2%;
+    color: white;
+    box-shadow: #be6b2c;
+}
+
+.llamar {
+    width: 45%;
+    align-content: center;
+    padding-left: 10%;
+    text-align: center;
+
+}
+.voluntarios {
+    width: 94%;
+    display: flex;
+    margin:2% 3%;
+}
+.voluntarios1 {
+    width: 95%;
+    margin: 0 5% 0 0;
+}
+.voluntarios2{
+    width: 60%;
+    margin: 0 20%;
+}
+
+@media (max-width: 700px) {
+    .portada {
+        flex-direction: column;
+        margin-bottom: 3%;
+    }
+
+    .nonfoto {
+        display: none;
+    }
+
+    .imgS {
+        min-width: 50%;
+    }
+.voluntarios {
+    flex-direction: column;
+}
+.voluntarios1, .voluntarios2{
+    width: 90%;
+    margin: auto;
+}
+    .section {
+        width: 90%;
+    }
+
+    button {
+        width: 50%;
+        margin: 6% 24%;
+    }
+
+    .contacto {
+        flex-direction: column;
+    }
+
+    .llamar {
+        margin-top: 2%;
+        width: 90%;
+    }
+    .texto{
+          margin:4% 0;
+    }
+}

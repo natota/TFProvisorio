@@ -1,0 +1,115 @@
+.fotos2 {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   flex-wrap: nowrap;
+   margin: 2% 0%;
+}
+.vista {
+   width: 24%;
+   overflow: hidden;
+   position: relative;
+   text-align: center;
+   -webkit-box-shadow: 1px 1px 2px #e6e6e6;
+   -moz-box-shadow: 1px 1px 2px #e6e6e6;
+   box-shadow: 1px 1px 2px #e6e6e6;
+   cursor: default;
+}
+
+.vista .mask,
+.vista .content {
+   position: absolute;
+   overflow: hidden;
+   top: 0;
+   left: 0;
+}
+
+.vista h2 {
+   text-transform: uppercase;
+   color: #1fadf9;
+   text-align: center;
+   position: relative;
+   font-size: 1.5rem;
+   padding: 1%;
+   margin: 0;
+}
+
+.vista p {
+   font-size: 1.3rem;
+   position: relative;
+   color: #fff;
+   padding: 1%;
+   text-align: center;
+   justify-content: center;
+   margin: 20% 1% 10% 1%;
+}
+
+.vista01 img {
+   transition: all 0.2s linear;
+}
+
+.vista01 .mask {
+   filter: alpha(opacity=0);
+   opacity: 0;
+   background-color: rgba(101, 99, 95, 0.7);
+   transition: all 0.4s ease-in-out;
+   padding: 10% 0% 50% 0%;
+}
+
+.vista01 h2 {
+   margin: 5% 1%;
+   transform: translateY(-100px);
+   filter: alpha(opacity=0);
+   opacity: 0;
+   transition: all 0.2s ease-in-out;
+}
+
+.vista01 p {
+   transform: translateY(100px);
+   filter: alpha(opacity=0);
+   opacity: 0;
+   transition: all 0.2s linear;
+}
+
+.vista01:hover img {
+   transform: scale(1.1, 1.1);
+}
+
+.vista01:hover .mask {
+   filter: alpha(opacity=100);
+   opacity: 1;
+}
+
+.vista01:hover h2,
+.vista01:hover p {
+
+   filter: alpha(opacity=100);
+   opacity: 1;
+   transform: translateY(0px);
+}
+
+.vista01:hover p {
+   transition-delay: 0.1s;
+}
+
+@media(max-width: 1000px) {
+   .fotos2 {
+      flex-wrap: wrap;
+   }
+
+   .vista {
+      width: 48%;
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 2%;
+   }
+}
+
+@media (max-width: 700px) {
+   .vista01 h2 {
+      font-size: 1.2rem;
+   }
+   .vista p {
+      font-size: 1rem;
+   }
+}
