@@ -1,8 +1,8 @@
 import  "@/estilos/fotosHistorias.css";
 
-export const Fotos= ({ id, foto, alt, titulo, descripcion }) => {
+export const Fotos= ({  foto, alt, titulo, descripcion }) => {
     return (
-        <div key={id} className="vista vista01">
+        <div  className="vista vista01">
             <img   src={foto} width="100%" alt={alt} />
             <div className="mask">
                 <h2>{titulo}</h2>

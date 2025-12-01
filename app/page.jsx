@@ -19,7 +19,7 @@ export default function Home() {
     <div className="home ">
       <div className="portada">
         <div className="fotoPortada">
-          <img src="/fotoPortada.jpeg" alt="varios animales agrupados" ></img>
+          <img src="/imagenes/fotoPortada.jpeg" alt="varios animales agrupados" ></img>
         </div>
         <div className="texto">
           <h2 >¡BIENVENIDOS! 🐾 </h2>
@@ -57,16 +57,16 @@ export default function Home() {
         <br />
       </div>
       <div className="galeria">
-        <img src="/image 46.png" width="150" alt="gato gris" ></img>
-        <img src="/image 31.jpeg" width="150" alt="cachorro negro" ></img>
-        <img src="/image 47.png" width="150" alt="gatito en el campo" ></img>
-        <img src="/image 32.jpeg" width="150" alt="perro en la playa" ></img>
-        <img src="/adopcion6.jpeg" width="150" alt="conejo en una caja" ></img>
-        <img src="/chanchito.jpg" width="150" alt="chanchito" ></img>
-        <img className="nonfoto" src="/image 33.jpeg" width="150" alt="perritos en la arena" ></img>
-        <img className="nonfoto" src="/image 49.png" width="150" alt="gato siamés" ></img>
-        <img className="nonfoto" src="/image 34.jpeg" width="150" alt="cachorro sonriente" ></img>
-        <img className="nonfoto" src="/image 50.png" width="150" alt="gatito manchado" ></img>
+        <img src="/imagenes/image 46.png" width="150" alt="gato gris" ></img>
+        <img src="/imagenes/image 31.jpeg" width="150" alt="cachorro negro" ></img>
+        <img src="/imagenes/image 47.png" width="150" alt="gatito en el campo" ></img>
+        <img src="/imagenes/image 32.jpeg" width="150" alt="perro en la playa" ></img>
+        <img src="/imagenes/adopcion6.jpeg" width="150" alt="conejo en una caja" ></img>
+        <img src="/imagenes/chanchito.jpg" width="150" alt="chanchito" ></img>
+        <img className="nonfoto" src="/imagenes/image 33.jpeg" width="150" alt="perritos en la arena" ></img>
+        <img className="nonfoto" src="/imagenes/image 49.png" width="150" alt="gato siamés" ></img>
+        <img className="nonfoto" src="/imagenes/image 34.jpeg" width="150" alt="cachorro sonriente" ></img>
+        <img className="nonfoto" src="/imagenes/image 50.png" width="150" alt="gatito manchado" ></img>
       </div>
     </div>
   );

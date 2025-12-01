@@ -41,7 +41,7 @@ const handleSubmit = (e) => {
     };
     setContacto([...contacto, nuevoContacto]);
     
-    alert(`Gracias por contactarnos,${user.nombre}!`);
+    alert(`Gracias por comunicarte con nosotros, ${user.nombre}!`);
     setUser({ nombre:"", email:"", telefono:"", comentario:"" });
     console.log(JSON.stringify(contacto));
 }

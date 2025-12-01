@@ -26,9 +26,9 @@ export default function Nosotros() {
                 <br />
                 <div className=" fotos2">
                     {equipo.length ? (
-                        equipo.map((e) => (
-                            <figure>
-                                <img key={e.id} src={e.imagen} alt={e.alt} width="95%" />
+                        equipo.map((e,index) => (
+                            <figure key={index}>
+                                <img src={e.imagen} alt={e.alt} width="95%" />
                                 <figcaption>{e.titulo}</figcaption>
                             </figure>
                         ))) : <p>no hay historias</p>}
