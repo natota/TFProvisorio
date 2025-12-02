@@ -7,8 +7,8 @@ export const ListaPrestaciones = ({ list }) => {
     return (
         <div className={estilo.art}>
             {list.length ? (
-                list.map((servicio) => (
-                    <section  className={estilo.sec} >
+                list.map((servicio, index) => (
+                    <section  key={index} className={estilo.sec} >
                         <Prestaciones {...servicio} >
                             <p className={estilo.p}>{servicio.info}</p>
                         </Prestaciones>

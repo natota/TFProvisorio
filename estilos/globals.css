@@ -24,7 +24,7 @@ strong {
 }
 
 .home {
-     margin:4%;
+     margin:4% 2%;
 }
 
 .lista {
@@ -59,10 +59,10 @@ strong {
 }
 .fotos2{
     background-color: rgba(231, 187, 133, 0.2);
-    padding:4%;
+    padding:4% 2%;
 }
 figure{
-    width: 32%;
+    width: 33%;
 }
 .columna {
     width: 20%;
@@ -172,5 +172,8 @@ button {
     }
     .texto{
           margin:4% 0;
+    }
+    .nav{
+        flex-wrap: wrap;
     }
 }

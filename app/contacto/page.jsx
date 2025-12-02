@@ -6,9 +6,7 @@ export const metadata = {
     title: "Te esperamos!!!"
 }*/
 export default function Contacto() {
-
     const [contacto, setContacto] = useState([]);
-
     const [user, setUser] = useState({
         nombre: "",
         email: "",
@@ -44,6 +42,7 @@ const handleSubmit = (e) => {
     alert(`Gracias por comunicarte con nosotros, ${user.nombre}!`);
     setUser({ nombre:"", email:"", telefono:"", comentario:"" });
     console.log(JSON.stringify(contacto));
+     e.target.reset();
 }
 
 return (
