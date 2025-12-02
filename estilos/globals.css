@@ -134,6 +134,9 @@ button {
 }
 
 @media (max-width: 700px) {
+    .home{
+        margin: 0 16px;
+    }
     .portada {
         flex-direction: column;
         margin-bottom: 3%;
@@ -173,7 +176,5 @@ button {
     .texto{
           margin:4% 0;
     }
-    .nav{
-        flex-wrap: wrap;
-    }
+    
 }
