@@ -5,15 +5,30 @@ export default function Navbar() {
     return (
         <div className={estilo.nav}>
             <ul>
-                <li> <Link className={estilo.navE} href="./">🏠</Link>
-                    <Link className={estilo.navLink} href="./">Inicio</Link>
+                <li>
+                    <div className={estilo.navL}>
+                        <Link className={estilo.navE} href="./">🏠</Link>
+                        <Link className={estilo.navLink} href="./">Inicio</Link>
+                    </div>
                 </li>
-                <li><Link className={estilo.navE} href="/nosotros">👨‍👩‍👧‍👦</Link>
-                    <Link className={estilo.navLink} href="/nosotros">Nosotros</Link></li>
-                <li> <Link className={estilo.navE} href="/servicios">🐕‍🦺</Link>
-                    <Link className={estilo.navLink} href="/servicios">Servicios</Link></li>
-                <li><Link className={estilo.navE} href="/contacto">☎️</Link>
-                    <Link className={estilo.navLink} href="/contacto">Contacto</Link></li>
+                <li>
+                    <div className={estilo.navL}>
+                        <Link className={estilo.navE} href="/nosotros">👨‍👩‍👧‍👦</Link>
+                        <Link className={estilo.navLink} href="/nosotros">Nosotros</Link>
+                    </div>
+                </li>
+                <li>
+                    <div className={estilo.navL}>
+                        <Link className={estilo.navE} href="/servicios">🐕‍🦺</Link>
+                        <Link className={estilo.navLink} href="/servicios">Servicios</Link>
+                    </div>
+                </li>
+                <li>
+                    <div className={estilo.navL}>
+                        <Link className={estilo.navE} href="/contacto">☎️</Link>
+                        <Link className={estilo.navLink} href="/contacto">Contacto</Link>
+                    </div>
+                </li>
             </ul>
         </div>
     );

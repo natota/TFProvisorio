@@ -8,7 +8,7 @@ export const metadata = {
   descripcion: "Sitio de adopción y consulta sobre animales domésticos",
   icons: {
     icon: {
-      url: "/hogar.png",
+      url: "/imagenes/hogar.png",
       type: "image/png"
     }
   }

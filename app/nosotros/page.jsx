@@ -1,7 +1,9 @@
 "use client";
 import { Avisos } from "@/componentes/avisos";
+import { FichaEquipo } from "@/componentes/fichaEquipo";
 import "@/estilos/globals.css";
-import { useState, useEffect} from "react";
+import { useState, useEffect } from "react";
+import Link from "next/link";
 /*
 export const metadata = {
     title: "¡Nuestro Equipo!"
@@ -25,13 +27,7 @@ export default function Nosotros() {
                     encuentran realizando diversos operativos para ayudar a estos otros grandes afectados por las catástrofes.</p>
                 <br />
                 <div className=" fotos2">
-                    {equipo.length ? (
-                        equipo.map((e,index) => (
-                            <figure key={index}>
-                                <img src={e.imagen} alt={e.alt} width="95%" />
-                                <figcaption>{e.titulo}</figcaption>
-                            </figure>
-                        ))) : <p>no hay historias</p>}
+                    <FichaEquipo ficha={equipo} />
                 </div>
             </div>
             <div className="voluntarios">
@@ -50,12 +46,12 @@ export default function Nosotros() {
                         nuestros animales, brindando su trabajo en caniles, enfermería, página web, colectas, reeducación y sociabilización
                         de animales con problemas de conducta, evaluando adoptantes, efectuando traslados y rescates, trabajando en jornadas
                         y asistiendo a colegios para concientizar, dando la bienvenida y asistiendo a nuestros visitantes. </p>
-                        <p>VOS PODES SER UNO DE ELLOS.</p>
+                    <p>VOS PODES SER UNO DE ELLOS.</p>
                 </div>
                 <Avisos className="voluntarios2" titulo="¡UNITE A NOSOTROS!"
                     texto="Si querés formar parte de nuestro equipo de voluntarios, envianos un mensaje en el formulario de contacto
-            y nos comunicaremos con vos a la brevedad.">
-                    <p><strong>¡TE ESTAMOS ESPERANDO! 🐾 </strong></p>
+                           y nos comunicaremos con vos a la brevedad.">
+                    <p><Link href="/contacto"><strong>TE ESTAMOS ESPERANDO!🐾</strong></Link></p>
                 </Avisos>
             </div>
             <h2>Nuestro equipo es feliz compartiendo con otros su pasión y su conocimiento!!</h2>

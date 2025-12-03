@@ -15,8 +15,7 @@
 
 .img {
   width: 60%;
-  margin: auto 20%;
-
+  margin:0 20% 20px;
 }
 
 .p {
@@ -32,5 +31,6 @@ margin:2%;
   .img {
     width: 40%;
     margin: 0 30%;
+  
   }
 }

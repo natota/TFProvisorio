@@ -3,21 +3,21 @@
             "id": 1,
             "nombre": "CACHITO...",
             "descripcion": "",
-            "texto": "Lo encontramos en un terreno baldío, todo sucio y con mucho hambre.Lo vacunamos, lo bañamos y una vez que estaba listo, conseguimos la familia ideal para él.",
+            "texto": "Lo encontramos en un terreno baldío, sucio y con mucho hambre. Lo vacunamos, lo bañamos y una vez listo, conseguimos la familia apropiada.",
             "foto": "/imagenes/familia1.jpeg"
       },
       {
             "id": 2,
             "nombre": "UN GATITO MUY FELIZ ",
             "descripcion": "",
-            "texto": "Juanito estaba con su mamá y sus hermanitos, pero necesitaba otra familia que pudiera atenderlo, cuidarlo y llenarlo de mimos.",
+            "texto": "Juanito estaba con su mamá y sus hermanitos, pero necesitaba otra familia que pudiera atenderlo, cuidarlo y llenarlo de mimos como se merece.",
             "foto": "/imagenes/familia2.jpeg"
       },
       {
             "id": 3,
             "nombre": "UN CONEJITO CURIOSO",
             "descripcion": "",
-            "texto": "Encontraron este conejito a la vera de la ruta y por miedo a que sufra un accidente lo trajeron al refugio para que le busquemos un hogar.",
+            "texto": "Encontraron este conejito a la vera de la ruta y por miedo a que sufra un accidente lo trajeron al refugio para que le busquemos un hogar, lo conseguimos!.",
             "foto": "/imagenes/familia3.jpeg"
       }
 ]
