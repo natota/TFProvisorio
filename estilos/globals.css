@@ -56,6 +56,7 @@ strong {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin:0;
 }
 
 .galeria img {
@@ -160,10 +161,11 @@ button {
 
     .galeria {
         width: 100%;
+        margin:0;
     }
 
     .galeria img {
-        min-width: 46%;
+        min-width: 44%;
     }
 
     .voluntarios {
