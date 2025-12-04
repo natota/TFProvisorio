@@ -28,6 +28,10 @@ strong {
     margin: 4% 2%;
 }
 
+.fotoPortada {
+    width: 40%;
+}
+
 .lista {
     margin: 0 5%;
     padding: 2em;
@@ -37,14 +41,10 @@ strong {
 
 .portada {
     display: flex;
-
-}
-
-.fotoPortada {
-    width: 90%;
 }
 
 .texto {
+    width: 56%;
     margin-left: 4%;
 }
 
@@ -56,7 +56,7 @@ strong {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin:0;
+    margin: 0;
 }
 
 .galeria img {
@@ -161,11 +161,11 @@ button {
 
     .galeria {
         width: 100%;
-        margin:0;
+        margin: 0;
     }
 
     .galeria img {
-        min-width: 44%;
+        width: 50%;
     }
 
     .voluntarios {
@@ -197,7 +197,12 @@ button {
         width: 90%;
     }
 
+    .fotoPortada {
+        width: 96%;
+    }
+
     .texto {
+        width: 96%;
         margin: 4% 0;
     }
 
