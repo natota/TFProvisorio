@@ -10,12 +10,12 @@ export const metadata = {
 }*/
 export default function Nosotros() {
     const [equipo, setEquipo] = useState([]);
-    useEffect(() => {
-        fetch("/data/equipo.json")
-            .then((res) => res.json())
-            .then((data) =>
-                setEquipo(data))
-            .catch(((err) => console.error('Error al cargar el equipo:', err)));
+    useEffect(() => {//gestiona efectos secundarios como pedir datos externos
+        fetch("/data/equipo.json") //se usa para hacer una petición: pedimos datos a un archivo json
+            .then((res) => res.json())//obtiene el json en javascript
+            .then((data) =>           
+                setEquipo(data))      //guarda la info en equipo, lo actualiza
+            .catch(((err) => console.error('Error al cargar el equipo:', err)));//para el caso de errores
     }, []);
     return (
         <div className="home">

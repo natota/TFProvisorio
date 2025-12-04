@@ -59,8 +59,8 @@ export default function Home() {
       <div className="galeria">
         <img className="ImgS" src="/imagenes/image 46.png" alt="gato gris" ></img>
         <img className="ImgS" src="/imagenes/image 31.jpeg" alt="cachorro negro" ></img>
-        <img className="ImgS" src="/imagenes/image 47.png" alt="gatito en el campo" ></img>
-        <img className="ImgS" src="/imagenes/image 32.jpeg" alt="perro en la playa" ></img>
+        <img className="ImgS nonfoto" src="/imagenes/image 47.png" alt="gatito en el campo" ></img>
+        <img className="ImgS nonfoto" src="/imagenes/image 32.jpeg" alt="perro en la playa" ></img>
         <img className="ImgS" src="/imagenes/adopcion6.jpeg" alt="conejo en una caja" ></img>
         <img className="ImgS" src="/imagenes/chanchito.jpg" alt="chanchito" ></img>
         <img className="nonfoto ImgS" src="/imagenes/image 33.jpeg" alt="perritos en la arena" ></img>

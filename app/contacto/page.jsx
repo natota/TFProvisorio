@@ -6,45 +6,36 @@ export const metadata = {
     title: "Te esperamos!!!"
 }*/
 export default function Contacto() {
-    const [contacto, setContacto] = useState([]);
-    const [user, setUser] = useState({
-        nombre: "",
+    const [contacto, setContacto] = useState([]);//inicia vacío y se guardan los contactos
+    const [user, setUser] = useState({//este use tiene UN objeto con estos atributos vacíos
+        nombre: "",                   //setUser actualiza los atributos
         email: "",
         telefono: "",
         comentario: ""
     });
-
-    useEffect(() => {
-        const guardados = localStorage.getItem("contacto");
-        if (guardados) {
-            setContacto(JSON.parse(guardados));//pasar Json a objeto
-        }
-    }, []);
-
+    useEffect(() => {//carga los contactos guardados en el localstorage al iniciar
+        const guardados = localStorage.getItem("contacto");//busca contactos
+        if (guardados) {                                   //si existen
+            setContacto(JSON.parse(guardados));//pasar Json a objeto y actualiza contacto(setContacto)
+        }}, []);
     // Guardar cambios en localStorage
-    useEffect(() => {
-        localStorage.setItem("contacto", JSON.stringify(contacto));//lo guardo como json
-    }, [contacto]);
-
-    const handleChange = (e) => {
+    useEffect(() => {//se ejecuta cuando cambia el estado de contacto
+        localStorage.setItem("contacto", JSON.stringify(contacto));//lo guardo como json(string)
+    }, [contacto]);//sincroniza el estado con el localstorage
+    
+    const handleChange = (e) => {//actualiza cada componente del form a medida que cargamos
         const { name, value } = e.target;
         setUser({ ...user, [name]: value });
     };
-
-    const handleSubmit = (e) => {
+    const handleSubmit = (e) => {//cuando guardamos, quedan los datos definitivos en el arreglo de objetos contacto
         e.preventDefault();
         const nuevoContacto = {
-            id: contacto.length + 1,
-            ...user,
-        };
-        setContacto([...contacto, nuevoContacto]);
-
+            id: Date.now(),//evita duplicados si borrás datos de la lista
+            ...user, };
+        setContacto([...contacto, nuevoContacto]);//se guardan los datos definitivamente
         alert(`Gracias por comunicarte con nosotros, ${user.nombre}!`);
         setUser({ nombre: "", email: "", telefono: "", comentario: "" });
-        console.log(contacto);
-        e.target.reset();
     }
-
     return (
         <main className="contacto">
             <section className="section">
@@ -52,20 +43,20 @@ export default function Contacto() {
                     <h2 className="titulo">Contacto  🐾</h2>
                     <div className="div">
                         <label>Nombre:</label>
-                        <input className="input" type="text" name="nombre" value={contacto.nombre} onChange={handleChange} required />
+                        <input className="input" type="text" name="nombre" value={user.nombre} onChange={handleChange} required />
                     </div>
                     <div className="div">
                         <label >Email:</label>
-                        <input className="input" type="email" name="email" value={contacto.email} onChange={handleChange} required />
+                        <input className="input" type="email" name="email" value={user.email} onChange={handleChange} required />
                     </div>
 
                     <div className="div">
                         <label >Teléfono:</label>
-                        <input className="input" type="tel" name="telefono" value={contacto.telefono} onChange={handleChange} required ></input>
+                        <input className="input" type="tel" name="telefono" value={user.telefono} onChange={handleChange} required />
                     </div>
                     <div className="div">
                         <label >Comentario:</label>
-                        <textarea className="input" name="comentario" value={contacto.comentario} onChange={handleChange} required placeholder="¿en qué te gustaría colaborar?"></textarea>
+                        <textarea className="input" name="comentario" value={user.comentario} onChange={handleChange} required placeholder="¿en qué te gustaría colaborar?"/>
                     </div>
                     <button className="btn" type="submit" >Guardar</button>
                 </form>
