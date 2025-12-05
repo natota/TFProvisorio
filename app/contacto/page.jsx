@@ -1,4 +1,5 @@
 "use client";
+
 import "@/estilos/globals.css";
 import { useEffect, useState } from "react";
 /*
@@ -6,35 +7,30 @@ export const metadata = {
     title: "Te esperamos!!!"
 }*/
 export default function Contacto() {
-    const [contacto, setContacto] = useState([]);//inicia vacío y se guardan los contactos
+    const [contacto, setContacto] = useState([]); //inicia vacío y se guardan los contactos
     const [user, setUser] = useState({//este use tiene UN objeto con estos atributos vacíos
         nombre: "",                   //setUser actualiza los atributos
         email: "",
         telefono: "",
         comentario: ""
     });
-    useEffect(() => {//carga los contactos guardados en el localstorage al iniciar
-        const guardados = localStorage.getItem("contacto");//busca contactos
-        if (guardados) {                                   //si existen
-            setContacto(JSON.parse(guardados));//pasar Json a objeto y actualiza contacto(setContacto)
-        }}, []);
-    // Guardar cambios en localStorage
-    useEffect(() => {//se ejecuta cuando cambia el estado de contacto
-        localStorage.setItem("contacto", JSON.stringify(contacto));//lo guardo como json(string)
-    }, [contacto]);//sincroniza el estado con el localstorage
-    
+    useEffect(()=>{
+    console.log(contacto);
+    },[contacto]
+    );
     const handleChange = (e) => {//actualiza cada componente del form a medida que cargamos
         const { name, value } = e.target;
-        setUser({ ...user, [name]: value });
+        setUser({...user, [name]:value });
     };
-    const handleSubmit = (e) => {//cuando guardamos, quedan los datos definitivos en el arreglo de objetos contacto
+    const handleSubmit = (e) => {
         e.preventDefault();
         const nuevoContacto = {
             id: Date.now(),//evita duplicados si borrás datos de la lista
             ...user, };
-        setContacto([...contacto, nuevoContacto]);//se guardan los datos definitivamente
+        setContacto((prevContacto)=>[...prevContacto, nuevoContacto]);//se guardan los datos definitivamente
         alert(`Gracias por comunicarte con nosotros, ${user.nombre}!`);
         setUser({ nombre: "", email: "", telefono: "", comentario: "" });
+        console.log(contacto);
     }
     return (
         <main className="contacto">

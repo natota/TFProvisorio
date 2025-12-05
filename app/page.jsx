@@ -18,8 +18,14 @@ export default function Home() {
   return (
     <div className="home ">
       <div className="portada">
-        <div className="fotoPortada">
-          <img src="/imagenes/fotoPortada.jpeg" alt="varios animales agrupados" ></img>
+        <div className="izquierda">
+          <div className="fotoPortada">
+            <img src="/imagenes/fotoPortada.jpeg" alt="varios animales agrupados" ></img>
+          </div>
+          <div className="opcion">
+            <Avisos titulo="NO TE OLVIDES..."
+              texto="llevar a tus mascotas al veterinario al menos una vez al año, aunque parezca estar sano. Muchas enfermedades no tienen síntomas hasta que están avanzadas." />
+          </div>
         </div>
         <div className="texto">
           <h2 >¡BIENVENIDOS! 🐾 </h2>

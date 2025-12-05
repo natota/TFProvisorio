@@ -19,7 +19,7 @@ export default function Nosotros() {
     }, []);
     return (
         <div className="home">
-            <div>
+            <div className="voluntarios1">
                 <h2>¡NUESTRO EQUIPO! 🐾 </h2>
                 <br />
                 <p>Las emergencias que aquejan a nuestro país también han afectado a las mascotas,

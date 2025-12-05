@@ -29,7 +29,7 @@ strong {
 }
 
 .fotoPortada {
-    width: 40%;
+    width: 90%;
 }
 
 .lista {
@@ -128,7 +128,9 @@ button {
     text-align: center;
 
 }
-
+.opcion{
+    display: none ;
+}
 .voluntarios {
     width: 94%;
     display: flex;
@@ -144,7 +146,26 @@ button {
     width: 60%;
     margin: 0 20%;
 }
-
+@media(max-width:1200px){
+    .portada{
+        width:100%;
+        margin:0;
+    }
+    .izquierda{
+        width:45%;
+    }
+    .fotoPortada{
+        width:90%;
+        margin:5% ;
+    }
+    .opcion{
+display: flex;
+margin: 20% 0;
+    }
+    .texto{
+        width:100%;
+    }
+}
 @media (max-width: 700px) {
     .home {
         margin: 0 16px;
@@ -154,18 +175,21 @@ button {
         flex-direction: column;
         margin-bottom: 3%;
     }
-
+.opcion{
+    display:none;
+}
     .nonfoto {
         display: none;
     }
 
     .galeria {
-        width: 100%;
-        margin: 0;
+        width: 98%;
+        margin: 1%;
+        justify-content: space-between;
     }
 
     .galeria img {
-        width: 50%;
+        width: 49%;
     }
 
     .voluntarios {
@@ -175,7 +199,7 @@ button {
 
     .voluntarios1,
     .voluntarios2 {
-        width: 90%;
+        width: 100%;
         margin: auto;
     }
 
@@ -196,14 +220,17 @@ button {
         margin-top: 2%;
         width: 90%;
     }
-
+.izquierda{
+    width: 100%;
+}
     .fotoPortada {
-        width: 96%;
+        width: 100%;
+        margin: 2% 0;
     }
 
     .texto {
-        width: 96%;
-        margin: 4% 0;
+        width: 100%;
+        margin: 4% auto;
     }
 
 }
