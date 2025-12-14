@@ -1,18 +1,18 @@
 [
     {
-        "id": 1,
+        "id": "1",
         "imagen": "/imagenes/foto2.jpg",
         "alt": "control veterinario",
         "titulo": "Equipo de veterinarios"
     },
     {
-        "id": 2,
+        "id": "2",
         "imagen": "/imagenes/foto1.jpg",
         "alt": "devolución de animales rescatados",
         "titulo": "Voluntarios rescatistas"
     },
     {
-        "id": 3,
+        "id": "3",
         "imagen": "/imagenes/foto3.png",
         "alt": "muestra de animalitos para adoptar",
         "titulo": "Equipo de adopciones"

@@ -7,8 +7,8 @@ export const ListaHistorias = ({cuenta}) => {
     return (
         <div className={estilo.art}>
        {cuenta.length ?(
-        cuenta.map((l, index)=>(
-            <section  key={index} className={estilo.sec}>
+        cuenta.map((l, id)=>(
+            <section  key={id} className={estilo.sec}>
                 <Prestaciones {...l}>
                     <p className={estilo.p}></p>
                 </Prestaciones>

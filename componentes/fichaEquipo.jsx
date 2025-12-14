@@ -4,8 +4,8 @@ export const FichaEquipo = ({ ficha }) => {
     return (
         <>
             {ficha.length ? (
-                ficha.map((e, index) => (
-                    <Ficha key={index} {...e} />
+                ficha.map((e, id) => (
+                    <Ficha key={id} {...e} />
                 ))) : <p>no hay historias</p>}
         </>
     );

@@ -2,17 +2,11 @@
 
 import "@/estilos/globals.css";
 import { useEffect, useState } from "react";
-/*
-export const metadata = {
-    title: "Te esperamos!!!"
-}*/
+
 export default function Contacto() {
-    const [contacto, setContacto] = useState([]); //inicia vacío y se guardan los contactos
-    const [user, setUser] = useState({//este use tiene UN objeto con estos atributos vacíos
-        nombre: "",                   //setUser actualiza los atributos
-        email: "",
-        telefono: "",
-        comentario: ""
+    const [contacto, setContacto] = useState([]); 
+    const [user, setUser] = useState({
+        nombre: "",  email: "", telefono: "",comentario: ""
     });
     useEffect(()=>{
     console.log(contacto);
@@ -61,7 +55,7 @@ export default function Contacto() {
                 <p>Si querés colaborar con: </p><br />
                 <h2> 🐾 <strong>Hogar para peluditos</strong> 🐾 </h2><br />
                 <p>Esperamos tu mensaje completando el formulario</p>
-                <p>...o llamando al <strong>291-45588444</strong></p>
+                <p>...o llamando al <a href="https://wa.me/542915849285" target="_blank"><strong>291-5849285</strong></a></p>
                 <p>También encontranos en todas las redes sociales</p>
             </section>
         </main>

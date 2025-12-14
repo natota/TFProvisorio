@@ -5,8 +5,8 @@ export const ListaFotos = ({lista}) => {
     return (
         < >
             {lista.length?(
-                lista.map((foto) => (
-                        <Fotos key={foto.id} {...foto}/>
+                lista.map((foto,id) => (
+                        <Fotos key={id} {...foto}/>
                 ))) : <p>no hay fotos</p>}
         </>
     );

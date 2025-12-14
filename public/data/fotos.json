@@ -1,27 +1,27 @@
 [
     {
-        "id": 1,
+        "id": "1",
         "foto": "/imagenes/adopcion1.jpeg",
         " alt": "cachorrito negro",
         "titulo": "CACHORRITO",
         "descripcion": "este cachorrito tiene una familia muy mascotera: con demasiados animalitos. Así que necesitamos encontrarle un nuevo hogar."
     },
     {
-        "id": 2,
+        "id": "2",
         "foto": "/imagenes/adopcion2.jpeg",
         "alt": "perro grande gris",
         "titulo": "PERROTE",
         "descripcion": "este grandote fue rescatado de la calle, es muy cariñoso y juguetón, ideal para una familia con niños."
     },
     {
-        "id": 3,
+        "id": "3",
         "foto": "/imagenes/images (1).jpeg",
         "alt": "4 gatitos",
         "titulo": "GATITOS",
         "descripcion": "los encontramos en un galpón muy sucios y descuidados, les colocamos sus vacunas y están listos para una nueva vida."
     },
     {
-        "id": 4,
+        "id": "4",
         "foto": "/imagenes/adopcion4.jpeg",
         "alt": "cachorritos negros",
         "titulo": "CHIQUILINES",

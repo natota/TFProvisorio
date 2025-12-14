@@ -1,6 +1,6 @@
 import estilo from "@/estilos/prestaciones.module.css";
 
-export const Prestaciones=({nombre, descripcion, texto, foto, children }) => {
+export const Prestaciones=({ nombre, descripcion, texto, foto, children }) => {
     return (
         <article className={estilo.prestacion}>
             <h3>{nombre}</h3>
